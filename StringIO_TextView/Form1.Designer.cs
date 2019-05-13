@@ -50,6 +50,7 @@
             this.btnEdit.TabIndex = 1;
             this.btnEdit.Text = "입력";
             this.btnEdit.UseVisualStyleBackColor = true;
+            this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
             // lblResult
             // 
@@ -66,7 +67,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(409, 214);
+            this.ClientSize = new System.Drawing.Size(385, 214);
             this.Controls.Add(this.lblResult);
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.txtEdit);
@@ -74,6 +75,7 @@
             this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "문자 입출력";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
